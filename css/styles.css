@@ -44,7 +44,8 @@ a:hover {
     margin: 15px auto;
     display: block;
     width: 120px;
-    border: 8px solid #fff;
+    border: 8px solid #2c2f3f;
+    border-radius: 100%;
 }
 
 #header .perfil h1 {
@@ -55,7 +56,6 @@ a:hover {
     -moz-text-align-last: center;
     text-align-last: center;
     font-family: "Poppins", sans-serif;
-    color: beige;
 }
 
 #header .perfil h1 a,
@@ -64,14 +64,14 @@ a:hover {
     text-decoration: none;
 }
 
-#header .perfil .redes-sociais li a {
+#header .perfil .redes-sociais a {
     font-size: 18px;
     display: inline-block;
     background: #212431;
     color: #fff;
     line-height: 1;
     padding: 8px 0;
-    margin-right: 4px;
+    margin-right: 15px;
     border-radius: 50%;
     text-align: center;
     width: 36px;
@@ -79,8 +79,119 @@ a:hover {
     transition: 0.3s;
 }
 
+.text-center {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: 6px;
+}
+
 #header .perfil .redes-sociais a:hover {
     background: #149ddd;
     color: #fff;
     text-decoration: none;
+}
+
+
+/* NAVEGAÇÃO */
+
+.nav-menu {
+    padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap;
+}
+
+.nav-menu a,
+.nav-menu a:focus {
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+}
+
+.nav-menu a i,
+.nav-menu a:focus i {
+    font-size: 24px;
+    padding-right: 8px;
+    color: #6f7180;
+}
+
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
+    color: #149ddd;
+}
+
+
+/* HERO */
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url("../img/lucas.jpg") top center;
+    background-size: cover;
+}
+
+#hero:before {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#hero .hero-container {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #fff;
+}
+
+#hero p {
+    color: #fff;
+    margin-bottom: 50px;
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+}
+
+#hero p span {
+    color: #fff;
+    padding-bottom: 4px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid #149ddd;
 }
