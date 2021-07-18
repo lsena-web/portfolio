@@ -38,6 +38,7 @@ a:hover {
     padding: 0 15px;
     background: #040b14;
     overflow-y: auto;
+    opacity: 0.9;
 }
 
 #header .perfil img {
@@ -79,6 +80,11 @@ a:hover {
     transition: 0.3s;
 }
 
+.d-flex {
+    display: flex;
+    flex-direction: column;
+}
+
 .text-center {
     box-sizing: border-box;
     display: flex;
@@ -90,6 +96,19 @@ a:hover {
     background: #149ddd;
     color: #fff;
     text-decoration: none;
+}
+
+#main {
+    margin-left: 300px;
+}
+
+@media (max-width: 1199px) {
+    #header {
+        left: -300px;
+    }
+    #main {
+        margin-left: 0;
+    }
 }
 
 
@@ -144,6 +163,38 @@ a:hover {
 }
 
 
+/* Mobile Navigation */
+
+.mobile-nav-alternativo {
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 9998;
+    border: 0;
+    font-size: 24px;
+    transition: all 0.4s;
+    outline: none !important;
+    background-color: #149ddd;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active #header {
+    left: 0;
+}
+
+
 /* HERO */
 
 #hero {
@@ -194,4 +245,156 @@ a:hover {
     padding-bottom: 4px;
     letter-spacing: 1px;
     border-bottom: 3px solid #149ddd;
+}
+
+@media (min-width: 1024px) {
+    #hero {
+        background-attachment: fixed;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    #hero h2 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* SESSSÕES */
+
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background: #f5f8fd;
+}
+
+.section-title {
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
+}
+
+.section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+.section-title p {
+    margin-bottom: 0;
+}
+
+
+/*
+-----------------------------------------
+GERAL CONTAIRNER E GRID
+------------------------------------------
+*/
+
+.container {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.row>* {
+    box-sizing: border-box;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+    margin-top: var(--bs-gutter-y);
+}
+
+.col-4 {
+    flex: 0 0 auto;
+    width: 33.3333333333%
+}
+
+.col-6 {
+    flex: 0 0 auto;
+    width: 50%
+}
+
+.col-8 {
+    flex: 0 0 auto;
+    width: 66.6666666667%
+}
+
+.mt {
+    margin-top: 10px;
+}
+
+
+/* SOBRE */
+
+.sobre .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #173b6c;
+}
+
+.sobre .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sobre .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sobre .content ul strong {
+    margin-right: 10px;
+}
+
+.sobre .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #149ddd;
+    line-height: 0;
+}
+
+.sobre .content p:last-child {
+    margin-bottom: 0;
 }
