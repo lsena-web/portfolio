@@ -45,7 +45,7 @@
                     <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
                     <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
                     <a href="https://api.whatsapp.com/send?phone=558881754649" class="google-plus" target="blank"><i class="bi bi-whatsapp"></i></a>
-                    <a href="https://www.linkedin.com/in/dami%C3%A3o-lucas-alencar-de-sena-974a6416b/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/dami%C3%A3o-lucas-alencar-de-sena-974a6416b/" class="linkedin" target="blank"><i class="bx bxl-linkedin"></i></a>
                 </div>
             </div>
             <nav id="navbar" class="nav-menu navbar">
