@@ -7,6 +7,7 @@
 
     <title>Lucas sena</title>
     <meta content="programação, desenvolvimento, dev, engenheiro de software, programador " name="keywords">
+    <meta name="description" content="Meu portfólio">
 
     <!-- Favicons -->
     <link href="assets/img/favicon-lucas.png" rel="icon">
