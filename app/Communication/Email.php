@@ -13,9 +13,9 @@ class Email
      * Credenciais do SMTP
      * @var string
      */
-    const HOST      = '********#';
-    const USER      = '********#';
-    const PASS      = '********#';
+    const HOST      = '********';
+    const USER      = '********';
+    const PASS      = '********';
     const SECURE    = 'ssl';
     const PORT      = '465';
     const CHARSET   = 'UTF-8';
@@ -24,8 +24,8 @@ class Email
      * Dados do remetente
      * @var string
      */
-    const FROM_EMAIL = '####################';
-    const FROM_NAME  = '####################';
+    const FROM_EMAIL = '****************';
+    const FROM_NAME  = 'My portfólio';
 
     /**
      * Menssagem de erro do envio
